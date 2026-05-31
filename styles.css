@@ -131,6 +131,7 @@ h1 {
   position: relative;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  align-items: start;
   gap: clamp(12px, 1.4vw, 22px);
   padding: clamp(76px, 10vw, 150px) max(20px, 6vw);
   background: var(--paper);
@@ -162,7 +163,6 @@ h1 {
   position: relative;
   z-index: 1;
   grid-column: span 6;
-  min-height: 100%;
   padding: clamp(28px, 4.8vw, 62px);
   border: 1px solid var(--line);
   border-radius: 2px;
@@ -179,8 +179,7 @@ h1 {
 
 .text-block.wide {
   grid-column: span 7;
-  min-height: 480px;
-  padding-top: clamp(42px, 7vw, 92px);
+  padding-top: clamp(38px, 5.2vw, 70px);
   background:
     linear-gradient(180deg, rgba(255, 250, 242, 0.68), rgba(255, 250, 242, 0.38)),
     var(--soft);
@@ -198,7 +197,6 @@ h1 {
 
 .text-block.emphasis {
   grid-column: 8 / span 5;
-  min-height: 480px;
   display: flex;
   align-items: end;
   background:
@@ -210,8 +208,8 @@ h1 {
 .text-block.emphasis p {
   color: var(--white);
   font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
-  font-size: clamp(34px, 4vw, 58px);
-  line-height: 1.08;
+  font-size: clamp(32px, 3.45vw, 50px);
+  line-height: 1.1;
 }
 
 .text-block.compact {
